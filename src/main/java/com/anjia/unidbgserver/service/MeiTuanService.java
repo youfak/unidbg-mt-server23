@@ -729,7 +729,7 @@ public class MeiTuanService extends AbstractJni implements IOResolver {
     public static String iGetApi(String url) {
         if (url != null) {
             //获取api
-            String api = url.substring(url.indexOf(".com") + 4, url.indexOf("?"));
+            String api = url.substring(url.indexOf(".com") + 4, !url.contains("?") ? url.length():url.indexOf("?"));
             System.out.println("api=>" + api);
             return api;
         }

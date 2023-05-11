@@ -5,7 +5,7 @@ application:
   unidbg:
     dynarmic: true
     verbose: false
-    async: true
+    async: false
 
 spring:
   application:
